@@ -1,0 +1,16 @@
+{% extends 'admin/adminbase.html.twig'%}
+{% block stylesheets %}
+    <link href="{{ asset('mysite.css') }}" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block body %}
+    <a href="{{ path('app_logout') }}">Log out</a>
+
+    <div class="div_centered" >
+        <div class="text_header">
+            {{ title }}
+        </div>
+        <div class="div_text text_menu gradient">
+            {{ form(form) }}
+        </div>
+    </div>
+{% endblock %}
